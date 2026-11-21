@@ -1,0 +1,24 @@
+{
+  "name": "kawanlama-automation-api-gpt",
+  "version": "1.0.0",
+  "description": "Playwright API automation for the Swagger Petstore User endpoints",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "test": "playwright test",
+    "test:user": "playwright test tests/user",
+    "test:e2e": "playwright test tests/e2e",
+    "test:exploratory": "playwright test --grep @exploratory",
+    "typecheck": "tsc --noEmit",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.65.1",
+    "@types/node": "^26.6.6",
+    "dotenv": "^18.0.10",
+    "typescript": "^7.0.2"
+  }
+}
